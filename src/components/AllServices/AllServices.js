@@ -6,25 +6,37 @@ const AllServices = () => {
   useEffect(() => {
     fetch("./services.JSON")
       .then((res) => res.json())
-      .then((data) => setAllServices(data.slice(0, 4)));
+      .then((data) => setAllServices(data));
   }, []);
   return (
     <div className="container-fluid">
       <div className="my-5 text-center">
-        <h1>Our All Services</h1>
+        <h1 className="text-uppercase fs-1 text-white">Our All Services</h1>
+        <p>
+          What you get from joining a fitness club compared to a regular gym
+          obviously differs. But what are the major <br /> benefits and perks of
+          signing up for a more well-rounded establishment?
+        </p>
       </div>
       <Row xs={1} md={4} className="g-4">
         {allServices.map((service) => (
           <Col className="my-4">
             <Card
-              className="h-100 shadow  text-white rounded"
-              style={{ backgroundColor: "#14213d" }}
+              className="h-100 shadow rounded"
+              style={{ backgroundColor: "#14213d", color: "#adb5bd" }}
             >
               <Card.Img variant="top" src={service.thumb} />
               <Card.Body>
-                <Card.Title>{service.name}</Card.Title>
-                <Card.Title>${service.price} Per Month</Card.Title>
-                <Card.Text>{service.text}</Card.Text>
+                <Card.Title className="text-white">{service.name}</Card.Title>
+                <Card.Title className="text-white">
+                  ${service.price} Per Month
+                </Card.Title>
+                <Card.Text>
+                  {" "}
+                  <p>
+                    <small>{service.text}</small>
+                  </p>
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>

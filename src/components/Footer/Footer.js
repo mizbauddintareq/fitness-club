@@ -18,44 +18,56 @@ const Footer = () => {
     <div>
       <div className=" mt-5">
         <footer
-          className="text-white text-center text-lg-start"
+          className=" text-center text-lg-start"
           style={{ backgroundColor: "#000000" }}
         >
           <div className=" p-4">
             <div className="row mt-4">
               <div className="col-lg-4 col-md-12 mb-4">
-                <h5 className="text-uppercase mb-4">About company</h5>
+                <h5 className="text-uppercase mb-4 text-white">
+                  About Fitness Club
+                </h5>
 
                 <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium voluptatum deleniti atque corrupti.
+                  It all started in 1980 with one club in Chelsea, London. Set
+                  in a “cul-de-sac”, off Fulham Rd, the brand quickly became the
+                  place to be, as Allan Fisher.
                 </p>
-
                 <p>
-                  Blanditiis praesentium voluptatum deleniti atque corrupti quos
-                  dolores et quas molestias.
+                  one of the original founders, started transforming fitness
+                  into a lifestyle that combined health and glamour.
                 </p>
 
                 <div className="mt-4">
-                  <Link type="button" className="bg-dark text-light mx-2">
+                  <Link
+                    to="/"
+                    type="button"
+                    className="bg-dark text-light mx-2"
+                  >
                     <FontAwesomeIcon icon={faFacebookSquare} size="3x" />
                   </Link>
-                  <Link type="button" className="bg-dark text-light">
+                  <Link to="/" type="button" className="bg-dark text-light">
                     <FontAwesomeIcon icon={faInstagramSquare} size="3x" />
                   </Link>
 
-                  <Link type="button" className="bg-dark text-light mx-2">
+                  <Link
+                    to="/"
+                    type="button"
+                    className="bg-dark text-light mx-2"
+                  >
                     <FontAwesomeIcon icon={faYoutubeSquare} size="3x" />
                   </Link>
 
-                  <Link type="button" className="bg-dark text-light">
+                  <Link to="/" type="button" className="bg-dark text-light">
                     <FontAwesomeIcon icon={faLinkedin} size="3x" />
                   </Link>
                 </div>
               </div>
 
               <div className="col-md-4 mb-4">
-                <h5 className="text-uppercase mb-4 pb-1">Search something</h5>
+                <h5 className="text-uppercase mb-4 pb-1 text-white">
+                  Search something
+                </h5>
 
                 <div className="form-outline form-white mb-4">
                   <input
@@ -69,21 +81,25 @@ const Footer = () => {
                 <ul className="fa-ul" style={{ marginLeft: "1.65em" }}>
                   <li className="mb-3">
                     <FontAwesomeIcon icon={faLocationArrow} />
-                    <span className="ms-2">Warsaw, 00-967, Poland</span>
+                    <span className="ms-2">
+                      Kolatoli, Cox's Bazar, Bangladesh
+                    </span>
                   </li>
                   <li className="mb-3">
                     <FontAwesomeIcon icon={faEnvelope} />
-                    <span className="ms-2">contact@example.com</span>
+                    <span className="ms-2">contact@fitnessclub.com</span>
                   </li>
                   <li className="mb-3">
                     <FontAwesomeIcon icon={faPhone} />
-                    <span className="ms-2">+ 48 234 567 88</span>
+                    <span className="ms-2">+88 01580541540</span>
                   </li>
                 </ul>
               </div>
 
               <div className="col-md-4 mb-4">
-                <h5 className="text-uppercase mb-4">Opening hours</h5>
+                <h5 className="text-uppercase mb-4 text-white">
+                  Opening hours
+                </h5>
 
                 <table className="table text-center text-white">
                   <tbody className="fw-normal">
@@ -109,9 +125,14 @@ const Footer = () => {
             className="text-center p-3"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
           >
-            © 2020 Copyright:
-            <a className="text-white" href="https://mdbootstrap.com/">
-              MDBootstrap.com
+            © 2020 Copyright ||{" "}
+            <a
+              className="text-white text-decoration-none"
+              target="_blank"
+              href="https://www.facebook.com/mizbauddintareq"
+            >
+              {" "}
+              Mizba Uddin Tareq
             </a>
           </div>
         </footer>

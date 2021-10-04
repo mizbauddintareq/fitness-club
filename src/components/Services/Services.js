@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -11,15 +10,19 @@ const Services = () => {
   }, []);
   return (
     <div>
-      <div className="text-center my-5">
-        <h1>Our Services</h1>
+      <div className=" container-fluid my-5 text-center">
+        <h1 className="text-white text-uppercase fs-1">Our Services</h1>
+        <hr className="w-25 mx-auto" />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-          accusamus veritatis quidem consequuntur in doloribus dolorem quam
-          inventore, magni fuga natus vero expedita sit dolore dignissimos non
-          deleniti eum, labore harum. Iure aut aliquam magni temporibus et
-          laborum assumenda odio expedita quia accusantium alias cupiditate
-          molestiae tempore, culpa sapiente quis.
+          A successful facility will accommodate both the serious athlete and
+          the casual recreational user. Activities include organized, group
+          instructional programs such as spinning classes, yoga, and martial
+          arts; organized and impromptu team sports; and individual fitness
+          opportunities such as cardiovascular training, weight training, and
+          swimming. Individual activities may be self-guided or conducted under
+          the supervision of a trainer. A Fitness Center may also accommodate
+          outdoor activities with features such as a running track, swimming
+          pool and sport playing fields.
         </p>
       </div>
       {/* service card */}
@@ -28,14 +31,21 @@ const Services = () => {
           {services.map((service) => (
             <Col className="my-4">
               <Card
-                className="h-100 shadow  text-white rounded"
-                style={{ backgroundColor: "#14213d" }}
+                className="h-100 shadow rounded"
+                style={{ backgroundColor: "#14213d", color: "#adb5bd" }}
               >
                 <Card.Img variant="top" src={service.thumb} />
                 <Card.Body>
-                  <Card.Title>{service.name}</Card.Title>
-                  <Card.Title>${service.price} Per Month</Card.Title>
-                  <Card.Text>{service.text}</Card.Text>
+                  <Card.Title className="text-white">{service.name}</Card.Title>
+                  <Card.Title className="text-white">
+                    ${service.price} Per Month
+                  </Card.Title>
+                  <Card.Text>
+                    {" "}
+                    <p>
+                      <small>{service.text}</small>
+                    </p>
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>

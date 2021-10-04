@@ -9,22 +9,24 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <section className="container-fluid text-white  mt-5">
+      <section className="container-fluid  mt-5">
         <div className="row">
           <div className="col-sm-12 text-center mb-4">
-            <h1>Contact Us</h1>
+            <h1 className="text-white">Contact Us</h1>
+            <p>
+              If you have got any question about any of our programmes let us
+              know
+            </p>
           </div>
 
           <div className="col-sm-12 mb-4 col-md-6">
             <div className="card border-dark rounded-0">
               <div className="card-header p-0">
-                <div className="bg-dark text-white text-center py-2">
+                <div className="bg-dark text-center py-2">
                   <h3>
                     <FontAwesomeIcon icon={faEnvelope} /> Write to us:
                   </h3>
-                  <p className="m-0">
-                    We’ll write rarely, but only the best content.
-                  </p>
+                  <p className="m-0">We will response as soon as possible</p>
                 </div>
               </div>
               <div className="card-body p-3">
@@ -108,7 +110,7 @@ const Contact = () => {
                 <a className="bg-dark px-3 text-white rounded mb-2 d-inline-block">
                   <FontAwesomeIcon icon={faLocationArrow} size="3x" />
                 </a>
-                <p> Your Address ….. </p>
+                <p>Kolatoli, Cox's Bazar, Bangladesh</p>
               </div>
               <div className="col-md-4">
                 <a className="bg-dark px-3 text-white rounded mb-2 d-inline-block">
@@ -120,7 +122,7 @@ const Contact = () => {
                 <a className="bg-dark px-3 text-white rounded mb-2 d-inline-block">
                   <FontAwesomeIcon icon={faEnvelope} size="3x" />
                 </a>
-                <p>mail@fitnessclub.com</p>
+                <p>contact@fitnessclub.com</p>
               </div>
             </div>
           </div>
