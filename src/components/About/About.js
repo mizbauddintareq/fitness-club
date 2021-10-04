@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className="container-fluid my-5">
       {/* about text center */}
-      <div className="row">
+      <div className="row" style={{ marginTop: "70px" }}>
         <div className="col-md-12">
           <div className="text-center">
             <h1 className="fs-1 text-white">Welcome to fitness club</h1>

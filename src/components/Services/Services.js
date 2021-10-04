@@ -11,7 +11,10 @@ const Services = () => {
   return (
     <div>
       {/* services text */}
-      <div className=" container-fluid my-5 text-center">
+      <div
+        className=" container-fluid text-center"
+        style={{ marginTop: "80px" }}
+      >
         <h1 className="text-white text-uppercase fs-1">Our Services</h1>
         <hr className="w-25 mx-auto bg-white" />
         <p>
@@ -30,9 +33,9 @@ const Services = () => {
       <div className="container-fluid">
         <Row xs={1} md={4} className="g-4">
           {services.map((service) => (
-            <Col key={service.id} className="mt-4">
+            <Col key={service.id}>
               <Card
-                className="h-100 shadow rounded"
+                className="h-100 shadow rounded mt-3"
                 style={{ backgroundColor: "#14213d", color: "#adb5bd" }}
               >
                 <Card.Img variant="top" src={service.thumb} />
