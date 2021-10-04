@@ -1,0 +1,26 @@
+[
+  {
+    "name": "GYM",
+    "price": 99,
+    "thumb": "https://i.ibb.co/K7LB25x/gym.jpg",
+    "text": "Exercise has been shown to improve your mood and decrease feelings of depression, anxiety, and stress.It produces changes in the parts of the brain that regulate stress and anxiety. It can also increase brain sensitivity for the hormones serotonin and norepinephrine, which relieve feelings of depression."
+  },
+  {
+    "name": "YOGA",
+    "price": 110,
+    "thumb": "https://i.ibb.co/MStNQqL/yoga.jpg",
+    "text": "Yoga offers physical and mental health benefits for people of all ages. And, if you’re going through an illness, recovering from surgery or living with a chronic condition, yoga can become an integral part of your treatment and potentially hasten healing. "
+  },
+  {
+    "name": "DANCING",
+    "price": 50,
+    "thumb": "https://i.ibb.co/3hR4xj4/dancing.jpg",
+    "text": "improved condition of your heart and lungs,increased muscular strength, endurance and motor fitness,increased aerobic fitness,improved muscle tone and strength,weight management,stronger bones and reduced risk of osteoporosis,better coordination, agility and flexibility."
+  },
+  {
+    "name": "BOXING",
+    "price": 65,
+    "thumb": "https://i.ibb.co/SBNjKBX/boxing.jpg",
+    "text": "There's no proof that fitness boxing is superior to any other types of exercise, but it does have many health benefits. One is strength.You're swinging your arms, moving the muscles of your arms and shoulders, increasing your upper-body strength."
+  }
+]
