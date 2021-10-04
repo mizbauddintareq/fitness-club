@@ -30,7 +30,7 @@ const Services = () => {
       <div className="container-fluid">
         <Row xs={1} md={4} className="g-4">
           {services.map((service) => (
-            <Col className="mt-4">
+            <Col key={service.id} className="mt-4">
               <Card
                 className="h-100 shadow rounded"
                 style={{ backgroundColor: "#14213d", color: "#adb5bd" }}

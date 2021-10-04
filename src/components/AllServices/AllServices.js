@@ -23,7 +23,7 @@ const AllServices = () => {
       {/*all service card */}
       <Row xs={1} md={4} className="g-4">
         {allServices.map((service) => (
-          <Col className="my-4">
+          <Col key={service.id} className="my-4">
             <Card
               className="h-100 shadow rounded"
               style={{ backgroundColor: "#14213d", color: "#adb5bd" }}
