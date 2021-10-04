@@ -10,14 +10,17 @@ const AllServices = () => {
   }, []);
   return (
     <div className="container-fluid">
+      {/*all service text */}
       <div className="my-5 text-center">
         <h1 className="text-uppercase fs-1 text-white">Our All Services</h1>
+        <hr className="w-25 mx-auto bg-white" />
         <p>
           What you get from joining a fitness club compared to a regular gym
           obviously differs. But what are the major <br /> benefits and perks of
           signing up for a more well-rounded establishment?
         </p>
       </div>
+      {/*all service card */}
       <Row xs={1} md={4} className="g-4">
         {allServices.map((service) => (
           <Col className="my-4">

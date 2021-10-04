@@ -11,6 +11,7 @@ const Contact = () => {
     <div>
       <section className="container-fluid  mt-5">
         <div className="row">
+          {/* contact text center */}
           <div className="col-sm-12 text-center mb-4">
             <h1 className="text-white">Contact Us</h1>
             <p>
@@ -19,6 +20,7 @@ const Contact = () => {
             </p>
           </div>
 
+          {/* contact form */}
           <div className="col-sm-12 mb-4 col-md-6">
             <div className="card border-dark rounded-0">
               <div className="card-header p-0">
@@ -91,6 +93,7 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* map and others */}
           <div className="col-sm-12 col-md-6">
             <div className="mb-4">
               <iframe

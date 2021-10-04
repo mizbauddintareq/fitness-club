@@ -11,10 +11,12 @@ import img from "../../images/about.jpg";
 const About = () => {
   return (
     <div className="container-fluid my-5">
+      {/* about text center */}
       <div className="row">
         <div className="col-md-12">
           <div className="text-center">
-            <h3 className="fs-1 text-white">Welcome to fitness club</h3>
+            <h1 className="fs-1 text-white">Welcome to fitness club</h1>
+            <hr className="w-50 mx-auto bg-white" />
             <p className="mx-auto">
               You’ve made the decision to join the gym. But which is best for
               you - a fitness club or a standard gym? Cost, types of membership{" "}
@@ -27,6 +29,7 @@ const About = () => {
       </div>
 
       <div className="row mt-5">
+        {/* about text left */}
         <div className="col-md-6">
           <div className="mt-3">
             <p className="fw-bold text-white">Training personal to you</p>
@@ -55,6 +58,7 @@ const About = () => {
             </p>
           </div>
         </div>
+        {/* about image */}
         <div className="col-md-6">
           <div className=" mt-3">
             <img src={img} alt="" className="img-fluid mx-auto d-block" />
@@ -62,6 +66,7 @@ const About = () => {
         </div>
       </div>
 
+      {/* about cart */}
       <div className="row row-cols-1 row-cols-md-4 g-4">
         <div className="col">
           <div

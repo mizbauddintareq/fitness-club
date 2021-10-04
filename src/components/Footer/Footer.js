@@ -23,6 +23,7 @@ const Footer = () => {
         >
           <div className=" p-4">
             <div className="row mt-4">
+              {/* about text and icon */}
               <div className="col-lg-4 col-md-12 mb-4">
                 <h5 className="text-uppercase mb-4 text-white">
                   About Fitness Club
@@ -64,6 +65,7 @@ const Footer = () => {
                 </div>
               </div>
 
+              {/* search field, info and icon */}
               <div className="col-md-4 mb-4">
                 <h5 className="text-uppercase mb-4 pb-1 text-white">
                   Search something
@@ -80,28 +82,35 @@ const Footer = () => {
 
                 <ul className="fa-ul" style={{ marginLeft: "1.65em" }}>
                   <li className="mb-3">
-                    <FontAwesomeIcon icon={faLocationArrow} />
+                    <FontAwesomeIcon
+                      className="text-white"
+                      icon={faLocationArrow}
+                    />
                     <span className="ms-2">
                       Kolatoli, Cox's Bazar, Bangladesh
                     </span>
                   </li>
                   <li className="mb-3">
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FontAwesomeIcon className="text-white" icon={faEnvelope} />
                     <span className="ms-2">contact@fitnessclub.com</span>
                   </li>
                   <li className="mb-3">
-                    <FontAwesomeIcon icon={faPhone} />
+                    <FontAwesomeIcon className="text-white" icon={faPhone} />
                     <span className="ms-2">+88 01580541540</span>
                   </li>
                 </ul>
               </div>
 
+              {/* opening and closing time */}
               <div className="col-md-4 mb-4">
                 <h5 className="text-uppercase mb-4 text-white">
                   Opening hours
                 </h5>
 
-                <table className="table text-center text-white">
+                <table
+                  className="table text-center"
+                  style={{ color: "#adb5bd" }}
+                >
                   <tbody className="fw-normal">
                     <tr>
                       <td>Mon - Thu:</td>
@@ -121,6 +130,7 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* copyright text and name with link */}
           <div
             className="text-center p-3"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}

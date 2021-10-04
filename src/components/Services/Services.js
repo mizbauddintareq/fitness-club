@@ -10,9 +10,10 @@ const Services = () => {
   }, []);
   return (
     <div>
+      {/* services text */}
       <div className=" container-fluid my-5 text-center">
         <h1 className="text-white text-uppercase fs-1">Our Services</h1>
-        <hr className="w-25 mx-auto" />
+        <hr className="w-25 mx-auto bg-white" />
         <p>
           A successful facility will accommodate both the serious athlete and
           the casual recreational user. Activities include organized, group
@@ -29,7 +30,7 @@ const Services = () => {
       <div className="container-fluid">
         <Row xs={1} md={4} className="g-4">
           {services.map((service) => (
-            <Col className="my-4">
+            <Col className="mt-4">
               <Card
                 className="h-100 shadow rounded"
                 style={{ backgroundColor: "#14213d", color: "#adb5bd" }}
