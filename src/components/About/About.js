@@ -15,7 +15,9 @@ const About = () => {
       <div className="row" style={{ marginTop: "70px" }}>
         <div className="col-md-12">
           <div className="text-center">
-            <h1 className="fs-1 text-white">Welcome to fitness club</h1>
+            <h1 className="fs-1 text-white text-uppercase">
+              Welcome to fitness club
+            </h1>
             <hr className="w-50 mx-auto bg-white" />
             <p className="mx-auto">
               You’ve made the decision to join the gym. But which is best for
@@ -28,7 +30,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="row mt-5">
+      <div className="row mt-5 d-flex align-items-center justify-content-between">
         {/* about text left */}
         <div className="col-md-6">
           <div className="mt-3">
@@ -67,7 +69,7 @@ const About = () => {
       </div>
 
       {/* about cart */}
-      <div className="row row-cols-1 row-cols-md-4 g-4">
+      <div className="row row-cols-1 row-cols-md-4 g-4 my-1">
         <div className="col">
           <div
             className="card h-100 shadow rounded"

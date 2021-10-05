@@ -17,7 +17,9 @@ const Header = () => {
         >
           <Container>
             <Navbar.Brand as={Link} to="/">
-              FITNESS CLUB
+              <div className="logo">
+                <h3>FITNESS CLUB</h3>
+              </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

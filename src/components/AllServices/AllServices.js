@@ -9,7 +9,7 @@ const AllServices = () => {
       .then((data) => setAllServices(data));
   }, []);
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" style={{ marginTop: "70px" }}>
       {/*all service text */}
       <div className="my-5 text-center">
         <h1 className="text-uppercase fs-1 text-white">Our All Services</h1>

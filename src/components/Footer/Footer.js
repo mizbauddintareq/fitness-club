@@ -30,37 +30,41 @@ const Footer = () => {
                 </h5>
 
                 <p>
-                  It all started in 1980 with one club in Chelsea, London. Set
-                  in a “cul-de-sac”, off Fulham Rd, the brand quickly became the
-                  place to be, as Allan Fisher.
+                  It all started in 1980 with one club in Cox's Bazar,
+                  Bangladesh.the brand quickly became the place to be, as
+                  FITNESS CLUB.
                 </p>
                 <p>
                   one of the original founders, started transforming fitness
                   into a lifestyle that combined health and glamour.
                 </p>
 
-                <div className="mt-4">
+                <div className="mt-2">
                   <Link
                     to="/"
                     type="button"
-                    className="bg-dark text-light mx-2"
+                    className="bg-dark text-light me-2"
                   >
-                    <FontAwesomeIcon icon={faFacebookSquare} size="3x" />
+                    <FontAwesomeIcon icon={faFacebookSquare} size="2x" />
                   </Link>
-                  <Link to="/" type="button" className="bg-dark text-light">
-                    <FontAwesomeIcon icon={faInstagramSquare} size="3x" />
+                  <Link
+                    to="/"
+                    type="button"
+                    className="bg-dark text-light me-2"
+                  >
+                    <FontAwesomeIcon icon={faInstagramSquare} size="2x" />
                   </Link>
 
                   <Link
                     to="/"
                     type="button"
-                    className="bg-dark text-light mx-2"
+                    className="bg-dark text-light me-2"
                   >
-                    <FontAwesomeIcon icon={faYoutubeSquare} size="3x" />
+                    <FontAwesomeIcon icon={faYoutubeSquare} size="2x" />
                   </Link>
 
                   <Link to="/" type="button" className="bg-dark text-light">
-                    <FontAwesomeIcon icon={faLinkedin} size="3x" />
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
                   </Link>
                 </div>
               </div>
@@ -68,14 +72,14 @@ const Footer = () => {
               {/* search field, info and icon */}
               <div className="col-md-4 mb-4">
                 <h5 className="text-uppercase mb-4 pb-1 text-white">
-                  Search something
+                  Search our package
                 </h5>
 
                 <div className="form-outline form-white mb-4">
                   <input
                     type="text"
                     id="formControlLg"
-                    className="form-control me-2 bg-dark text-white"
+                    className="form-control bg-dark text-white"
                     placeholder="Search Here"
                   />
                 </div>
